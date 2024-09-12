@@ -329,3 +329,85 @@ header {
     color: grey;
     line-height: 2;
 }
+
+
+/* VALUES */
+
+#values {
+    display: flex;
+    padding: 96px 0;
+}
+
+.values__container {
+    display: flex;
+    justify-content: space-between;
+}
+
+.values__text--container {
+    width: 44%;
+}
+
+.values__img--container {
+    width: 50%;
+}
+
+.values__title {
+    margin-top: 16px;
+}
+
+.values__description {
+    font-size: 18px;
+    color: grey;
+    margin-top: 32px;
+}
+
+.values__list {
+    margin-top: 32px;
+    display: flex;
+}
+
+.value__title--container {
+    display: flex;
+    align-items: center;
+}
+
+.value__icon {
+    height: 36px;
+    width: 36px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    line-height: 1;
+}
+
+.value__affordable {
+    background-color: #9ae6b4;
+}
+
+.value__affordable--icon {
+    color: green;
+}
+
+.value__professionalism {
+    background-color: #feb2b2;
+}
+
+.value__proffesionalism--icon {
+    color: red;
+}
+
+.value__title {
+    margin-left: 12px;
+}
+
+.value__description {
+    margin-top: 16px;
+    line-height: 1.6;
+    color: grey;
+}
+
+.values__more--button {
+    margin-top: 48px;
+    padding: 12px 32px;
+}
