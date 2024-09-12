@@ -43,8 +43,11 @@ img {
     display: flex;
     height: 40px;
     line-height: 40px;
-    font-size: 24px;
     font-weight: 700;
+}
+
+.nav__logo--text {
+    font-size: 24px;
 }
 
 .nav__logo--img {
@@ -88,6 +91,7 @@ nav {
 
 header {
     padding: 96px 0;
+    margin: 0 80px;
 }
 
 .header__container {
@@ -189,3 +193,46 @@ header {
     text-align: center;
 }
 
+.services__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100%;
+    margin-top: 48px;
+    padding: 0 80px;
+}
+
+.service {
+    height: 200px;
+    width: calc( 100% / 3 );
+    display: flex;
+    padding: 32px 8px;
+}
+
+.service__icon {
+    width: 66px;
+    height: 66px;
+    border: 1.5px solid lightgrey;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.service__icon--img {
+    width: 24px;
+}
+
+.service__text {
+    margin: 8px 0 0 16px;
+}
+
+.service__title {
+    font-size: 24px;
+}
+
+.service__description {
+    margin: 16px 8px 0 0;
+    font-size: 16px;
+    line-height: 2;
+}
