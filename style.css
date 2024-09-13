@@ -42,6 +42,12 @@ img {
     font-weight: 700;
     border: none;
     border-radius: 999px;
+    transition: all 0.2s ease;
+    cursor: pointer;
+}
+
+.button:hover {
+    background-color: rgb(60, 13, 153);
 }
 
 .legend {
@@ -92,9 +98,13 @@ nav {
     margin: 0 24px;
     font-size: 14px;
     font-weight: 600;
-    padding-bottom: 4px;
     display: flex;
     align-items: center;
+}
+
+.nav__link:hover {
+    color: var( --theme__color );
+    border-bottom: 2px solid var( --theme__color );
 }
 
 .nav__link--login {
@@ -151,12 +161,17 @@ header {
     border-radius: 999px;
     color: lightgrey;
     font-size: 20px;
+    transition: all 0.3s ease;
 }
 
 .header__email--box::placeholder {
     color: lightgrey;
     font-family: 'Inter', system-ui;
     font-size: 16px;
+}
+
+.header__email--box:hover {
+    border-color: grey;
 }
 
 .header__email--button {
@@ -507,6 +522,12 @@ header {
     font-size: 14px;
     font-weight: 700;
     text-wrap: nowrap;
+    transition: all 0.3s ease;
+}
+
+.price__plan--button:hover {
+    transform: translateY(-1px) translateX(1px);
+    box-shadow: 0 4px 40px -15px black;
 }
 
 .plan__business {
@@ -560,6 +581,8 @@ header {
     color: white;
     font-size: 16px;
     font-weight: 700;
+    transition: all 0.25s ease;
+    cursor: pointer;
 }
 
 .cta__get-started {
@@ -567,9 +590,18 @@ header {
     margin-right: 32px;
 }
 
+.cta__get-started:hover {
+    background-color: rgb(229 62 62);
+}
+
 .cta__contact-us {
     background: transparent;
     border: 1px solid white;
+}
+
+.cta__contact-us:hover {
+    background: white;
+    color: var( --theme__color );
 }
 
 
@@ -662,6 +694,12 @@ footer {
     align-items: center;
     color: black;
     font-size: 14px;
+    transition: opacity 0.2s ease;
+    cursor: pointer;
+}
+
+.footer__bottom--social:hover {
+    opacity: 0.85;
 }
 
 .footer__bottom--social:not(:last-child) {
