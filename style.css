@@ -17,7 +17,7 @@ body {
     margin: 0;
     padding: 0;
     font-family: 'Inter', system-ui;
-    color: var( --text__color );
+    color: var(--text__color);
 }
 
 h1 {
@@ -36,7 +36,7 @@ img {
 /* REUSABLES */
 
 .button {
-    background-color: var( --theme__color );
+    background-color: var(--theme__color);
     color: white;
     font-size: 16px;
     font-weight: 700;
@@ -57,7 +57,7 @@ img {
 }
 
 .text__purple {
-    color: var( --theme__color );
+    color: var(--theme__color);
 }
 
 .row {
@@ -100,11 +100,12 @@ nav {
     font-weight: 600;
     display: flex;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav__link:hover {
-    color: var( --theme__color );
-    border-bottom: 2px solid var( --theme__color );
+    color: var(--theme__color);
+    border-bottom: 2px solid var(--theme__color);
 }
 
 .nav__link--login {
@@ -115,7 +116,7 @@ nav {
     font-size: 14px;
     font-weight: 600;
     color: white;
-    background-color: var( --theme__color );
+    background-color: var(--theme__color);
     border-radius: 100px;
     padding: 12px 32px;
 }
@@ -179,7 +180,7 @@ header {
     padding: 16px 0;
     width: 160px;
     right: 0;
-    left: calc( 90% - 160px - 10px );
+    left: calc(90% - 160px - 10px);
 }
 
 .header__companies {
@@ -190,7 +191,7 @@ header {
     text-transform: uppercase;
     font-size: 12px;
     font-weight: 700;
-    color: var( --grey__blue__color );
+    color: var(--grey__blue__color);
 }
 
 .header__companies--img {
@@ -213,7 +214,7 @@ header {
 }
 
 .services__description {
-    color: var( --grey__color );
+    color: var(--grey__color);
     font-size: 18px;
     margin-top: 16px;
     max-width: 41.667%;
@@ -231,7 +232,7 @@ header {
 
 .service {
     height: 200px;
-    width: calc( 100% / 3 );
+    width: calc(100% / 3);
     display: flex;
     padding: 32px 8px;
 }
@@ -293,7 +294,7 @@ header {
 .quality__description {
     font-size: 18px;
     line-height: 1.6;
-    color: var( --grey__color );
+    color: var(--grey__color);
 }
 
 .quality__more--button {
@@ -344,7 +345,7 @@ header {
 
 .start__step--description {
     font-size: 12px;
-    color: var( --grey__color );
+    color: var(--grey__color);
     line-height: 2;
 }
 
@@ -375,7 +376,7 @@ header {
 
 .values__description {
     font-size: 18px;
-    color: var( --grey__color );
+    color: var(--grey__color);
     margin-top: 32px;
     line-height: 1.6;
 }
@@ -425,7 +426,7 @@ header {
 .value__description {
     margin-top: 16px;
     line-height: 1.6;
-    color: var( --grey__color );
+    color: var(--grey__color);
 }
 
 .values__more--button {
@@ -446,14 +447,15 @@ header {
 .price__description {
     font-size: 18px;
     margin-top: 16px;
-    color: var( --grey__color );
+    color: var(--grey__color);
     max-width: 44%;
     line-height: 1.25;
+    text-align: center;
 }
 
 .price__plans--container {
-    margin-top: 64px;
     display: flex;
+    margin: 64px 32px 0px 32px;
 }
 
 .plan {
@@ -488,7 +490,7 @@ header {
 
 .plan__header--interval {
     font-size: 16px;
-    color: var( --grey__blue__color );
+    color: var(--grey__blue__color);
 }
 
 .plan__header--price {
@@ -500,8 +502,8 @@ header {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border-top: 2px solid rgba( 220, 220, 220, 0.5 );
-    border-bottom: 2px solid rgba( 220, 220, 220, 0.5 );
+    border-top: 2px solid rgba(220, 220, 220, 0.5);
+    border-bottom: 2px solid rgba(220, 220, 220, 0.5);
 }
 
 .plan__customer {
@@ -510,7 +512,7 @@ header {
 
 .plan__perk {
     margin-top: 16px;
-    color: var( --grey__color );
+    color: var(--grey__color);
 }
 
 .price__plan--button {
@@ -561,7 +563,7 @@ header {
 }
 
 .cta__container {
-    background: var( --theme__color );
+    background: var(--theme__color);
     display: flex;
     padding: 96px 128px;
     border-radius: 8px;
@@ -601,14 +603,14 @@ header {
 
 .cta__contact-us:hover {
     background: white;
-    color: var( --theme__color );
+    color: var(--theme__color);
 }
 
 
 /* FOOTER */
 
 footer {
-    background-color: var( --theme__color );
+    background-color: var(--theme__color);
     position: absolute;
     left: 0;
     right: 0;
@@ -645,7 +647,7 @@ footer {
 }
 
 .footer__bar {
-    background-color: rgba( 220, 220, 220, 0.2 );
+    background-color: rgba(220, 220, 220, 0.2);
     height: 2px;
     width: 100%;
     margin: 64px 0;
@@ -704,4 +706,376 @@ footer {
 
 .footer__bottom--social:not(:last-child) {
     margin-right: 16px;
+}
+
+
+/* MEDIA QUERIES */
+
+
+/* laptops
+*/
+
+@media (max-width: 1280px) {
+
+    h1 {
+        font-size: 40px;
+    }
+
+    .header__paragraph {
+        font-size: 16px;
+    }
+
+    .header__companies--img {
+        width: 80%;
+    }
+
+    .header__img--wrapper {
+        width: 45%;
+        margin-left: 15%;
+    }
+
+    .price__plans--container {
+        flex-direction: column;
+    }
+
+    .plan:not(:last-child) {
+        margin-bottom: 32px;
+    }
+
+}
+
+
+/* ipads
+*/
+
+@media (max-width: 1024px) {
+
+    .header__container {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .header__hero {
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .header__email--container {
+        width: 80%;
+        transform: translateX(16px);
+    }
+
+    header.row {
+        max-width: 600px;
+    }
+
+    nav.row {
+        max-width: 1200px;
+    }
+
+    .header__companies--img {
+        width: 100%;
+    }
+
+    .header__companies {
+        margin-top: 48px;
+    }
+
+    .header__img--wrapper {
+        width: 100%;
+        margin: 32px 0 0 0;
+    }
+
+    .service {
+        width: 50%;
+    }
+
+    .services__title {
+        width: 60%;
+        text-align: center;
+    }
+
+    .cta__container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .cta__title {
+        margin-bottom: 32px;
+        max-width: 70%;
+        text-align: center;
+    }
+
+    .footer__bottom--container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+}
+
+
+/* big phones
+*/
+
+@media (max-width: 768px) {
+
+    h1 {
+        text-align: center;
+    }
+
+    .header__title {
+        font-size: 30px;
+    }
+
+    .header__paragraph {
+        margin: 16px 0;
+    }
+
+    .row {
+        max-width: 600px;
+    }
+
+    .services__title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .services__description {
+        max-width: 70%;
+    }
+
+    .service {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+
+    .service__text {
+        width: 70%;
+    }
+
+    .quality__container {
+        flex-direction: column-reverse;
+    }
+
+    .quality__text--container {
+        width: 75%;
+        text-align: center;
+        justify-content: center;
+    }
+
+    .quality__img--container {
+        width: 100%;
+    }
+
+    .quality__text--container {
+        width: 100%;
+    }
+
+    .quality__description {
+        font-size: 14px;
+    }
+
+    .start__container {
+        flex-direction: column;
+    }
+
+    .start__img--container,
+    .start__text--container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .start__img--container {
+        margin-bottom: 48px;
+    }
+
+    .start__steps--container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start__step {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .start__step--text {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 0;
+    }
+
+    .start__step--title {
+        margin-bottom: 8px;
+    }
+
+    .start__step--description {
+        font-size: 14px;
+        width: 70%;
+    }
+
+    .start__step--number {
+        margin-bottom: 8px;
+    }
+
+    .values__container {
+        flex-direction: column-reverse;
+    }
+
+    .values__img--container,
+    .values__text--container {
+        width: 100%;
+        text-align: center;
+    }
+
+    .values__img--container {
+        margin-bottom: 48px;
+    }
+
+    .values__title {
+        text-align: center;
+    }
+
+    .values__description {
+        font-size: 14px;
+        text-align: center;
+    }
+
+    .values__list {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .value__title--container {
+        display: flex;
+        justify-content: center;
+    }
+
+    .value__description {
+        width: 70%;
+    }
+
+    .value__description {
+        margin-bottom: 32px;
+    }
+
+    .values__more--button {
+        margin-top: 16px;
+    }
+
+    .price__description {
+        max-width: 70%;
+    }
+
+    .cta__title {
+        max-width: 100%;
+    }
+
+    .cta__buttons {
+        display: flex;
+    }
+
+    .cta__button {
+        text-wrap: nowrap;
+    }
+
+    .cta__container {
+        padding-top: 48px;
+        padding-bottom: 48px;
+    }
+
+    .footer__links {
+        margin-top: 32px;
+    }
+
+    .footer__bottom--container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .footer__bottom--socials {
+        position: relative;
+    }
+
+    .footer__logo {
+        position: relative;
+    }
+
+    .footer__logo--text {
+        display: none;
+    }
+
+    .footer__copyright {
+        margin: 32px 0;
+    }
+
+}
+
+
+@media ( max-width: 640px ) {
+
+    .header__email--container {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .header__email--button {
+        position: relative;
+        padding: 16px 0;
+        width: 100%;
+        top: 12px;
+        left: 0;
+    }
+
+    .header__email--box {
+        width: 100%;
+        padding: 16px 0 16px 32px;
+    }
+
+    .footer__links {
+        margin: 16px 8px 0 8px;
+    }
+
+    .services__list {
+        padding: 0;
+    }
+
+    .cta__buttons {
+        flex-direction: column;
+    }
+
+    .cta__get-started {
+        margin: 0 0 16px 0;
+    }
+
+    .cta__title {
+        max-width: 100%;
+    }
+
+    .cta__container {
+        padding: 32px 16px;
+    }
+
+    .footer__links {
+        margin-left: 16px;
+        margin-right: 16px;
+    }
+
+    .footer__links--container {
+        width: 80%;
+        margin: 0 auto;
+        justify-content: space-around;
+    }
+
 }
