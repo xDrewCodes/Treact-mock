@@ -126,18 +126,14 @@ nav {
     font-size: 24px;
     cursor: pointer;
     transition: color 0.2s ease;
+    display: none;
 }
 
 .nav__menu--button:hover {
     color: var(--theme__color);
 }
 
-.nav__menu--button-open {
-    display: none;
-}
-
 .nav__menu--button-close {
-    display: none;
     z-index: 3;
 }
 
