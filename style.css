@@ -101,6 +101,7 @@ nav {
     display: flex;
     align-items: center;
     cursor: pointer;
+    border-bottom: 2px solid white;
 }
 
 .nav__link:hover {
@@ -119,6 +120,21 @@ nav {
     background-color: var(--theme__color);
     border-radius: 100px;
     padding: 12px 32px;
+}
+
+.nav__menu--button {
+    font-size: 24px;
+    cursor: pointer;
+    transition: color 0.2s ease;
+}
+
+.nav__menu--button:hover {
+    color: var(--theme__color);
+}
+
+.nav__menu--button-close {
+    display: none;
+    z-index: 3;
 }
 
 
@@ -750,6 +766,40 @@ footer {
 
 @media (max-width: 1024px) {
 
+    .nav__menu--open .nav__links {
+        display: flex;
+    }
+
+    .nav__menu--open .nav__menu--button-close {
+        display: block;
+    }
+
+    .nav__links {
+        flex-direction: column;
+        align-items: center;
+        background-color: white;
+        border: 2px solid var(--grey__color);
+        border-radius: 8px;
+        width: calc(100% - 32px);
+        position: absolute;
+        top: 24px;
+        left: 16px;
+        padding: 32px;
+        z-index: 2;
+        display: none;
+    }
+
+    .nav__link {
+        margin: 8px 0;
+        padding: 4px 0;
+        font-size: 18px;
+    }
+
+    .nav__link--primary {
+        font-size: 18px;
+        margin: 12px 0;
+    }
+
     .header__container {
         flex-direction: column;
         align-items: center;
@@ -1023,7 +1073,7 @@ footer {
 }
 
 
-@media ( max-width: 640px ) {
+@media (max-width: 640px) {
 
     .header__email--container {
         display: flex;
