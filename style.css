@@ -788,7 +788,7 @@ footer {
         border: 2px solid rgba(100, 100, 100, 0.2);
         border-radius: 8px;
         width: calc(100% - 32px);
-        position: absolute;
+        position: fixed;
         top: 24px;
         left: calc(80%);
         padding: 32px;
